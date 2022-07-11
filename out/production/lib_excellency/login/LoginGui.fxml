@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-min-width: 300; -fx-max-width: 300; -fx-min-height: 400; -fx-max-height: 400; -fx-background-color: #f4ede4;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.logincontrol">
+   <children>
+      <TextField fx:id="id" layoutX="97.0" layoutY="136.0" style="-fx-border-color: #989E8B;" />
+      <Button fx:id="login" layoutX="125.0" layoutY="296.0" mnemonicParsing="false" onAction="#login" style="-fx-background-color: #528C5B;" text="Log in" textFill="#f4ede4">
+         <effect>
+            <Reflection />
+         </effect></Button>
+      <Label id="wrong pass" fx:id="outpass" layoutX="96.0" layoutY="191.0" prefHeight="18.0" prefWidth="152.0" textAlignment="CENTER" textFill="#e12e2e" />
+      <Label fx:id="outname" layoutX="94.0" layoutY="112.0" prefHeight="18.0" prefWidth="152.0" textAlignment="CENTER" textFill="#e12e2e" />
+      <Label fx:id="outunknown" layoutX="75.0" layoutY="269.0" prefHeight="18.0" prefWidth="152.0" textAlignment="CENTER" />
+      <Label fx:id="nameid" layoutX="22.0" layoutY="141.0" text="Name or ID" />
+      <Label fx:id="pass2" layoutX="22.0" layoutY="226.0" text="Password" />
+      <PasswordField fx:id="pass" layoutX="97.0" layoutY="221.0" style="-fx-border-color: #989E8B;" />
+      <Label layoutX="90.0" layoutY="60.0" text="Login to system" textFill="#1b6609">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Hyperlink layoutX="14.0" layoutY="363.0" onAction="#forgotten" text="forgot password" />
+   </children>
+</AnchorPane>

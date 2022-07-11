@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="pp" prefHeight="227.0" prefWidth="398.0" style="-fx-background-color: #f4ede4;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="liblib.add_reader.addred_control">
+   <children>
+      <TextField fx:id="pnum" layoutX="48.0" layoutY="28.0" prefHeight="26.0" prefWidth="302.0" promptText="Phone Number" style="-fx-border-color: #989E8B;" />
+      <TextField fx:id="name" layoutX="48.0" layoutY="64.0" prefHeight="26.0" prefWidth="302.0" promptText="Name" style="-fx-border-color: #989E8B;" />
+      <TextField fx:id="email" layoutX="48.0" layoutY="100.0" prefHeight="26.0" prefWidth="302.0" promptText="Email" style="-fx-border-color: #989E8B;" />
+      <TextField fx:id="addr" layoutX="48.0" layoutY="136.0" prefHeight="26.0" prefWidth="302.0" promptText="Address" style="-fx-border-color: #989E8B;" />
+      <Button layoutX="125.0" layoutY="179.0" mnemonicParsing="false" onAction="#save" prefHeight="36.0" prefWidth="50.0" style="-fx-background-color: #528C5B;" text="save" textFill="#f7f1f1" />
+      <Button layoutX="217.0" layoutY="179.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="50.0" style="-fx-background-color: #e11f18;" text="cancel" textFill="#faf6f6" />
+   </children>
+</AnchorPane>

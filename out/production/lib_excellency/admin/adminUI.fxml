@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.admincontrol">
+   <children>
+      <TabPane prefHeight="500.0" prefWidth="800.0" side="RIGHT" tabClosingPolicy="UNAVAILABLE" tabMaxWidth="60.0" tabMinWidth="60.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab style="-fx-background-color: #D49B7E;" text="Employees">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #f4ede4;">
+                     <children>
+                        <TableView fx:id="tabl" layoutY="120.0" prefHeight="380.0" prefWidth="772.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="120.0">
+                          <columns>
+                            <TableColumn fx:id="id" minWidth="-Infinity" prefWidth="57.600006103515625" text="ID" />
+                            <TableColumn fx:id="name" prefWidth="188.79998779296875" text="Name" />
+                              <TableColumn fx:id="job" prefWidth="83.20001220703125" text="Job" />
+                              <TableColumn fx:id="email" prefWidth="241.5999755859375" text="Email" />
+                              <TableColumn fx:id="phone" prefWidth="197.60002441406255" text="phone number" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="addemp" layoutX="21.0" layoutY="76.0" mnemonicParsing="false" onAction="#addemp" prefHeight="30.0" prefWidth="58.0" style="-fx-background-color: #528C5B #528C5B;" text="add" textAlignment="CENTER" textFill="#efebeb" />
+                        <Button layoutX="109.0" layoutY="76.0" mnemonicParsing="false" onAction="#refresh" prefHeight="30.0" prefWidth="58.0" text="refresh" textFill="#151515" />
+                        <TextField layoutX="200.0" layoutY="79.0" prefHeight="26.0" prefWidth="299.0" style="-fx-border-color: #528C5B;" />
+                        <Button layoutX="502.0" layoutY="77.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="58.0" text="Search" textFill="#131212" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab style="-fx-background-color: #D49B7E;" text="books">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #f4ede4;">
+                     <children>
+                        <TableView fx:id="tb" layoutY="120.0" prefHeight="378.0" prefWidth="771.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="120.0">
+                          <columns>
+                            <TableColumn fx:id="isbn" prefWidth="134.39999389648438" text="ISBN" />
+                            <TableColumn fx:id="nam" prefWidth="200.79998779296875" text="Name" />
+                              <TableColumn fx:id="cat" prefWidth="109.5999755859375" text="Category" />
+                              <TableColumn fx:id="auth" prefWidth="148.00006103515625" text="Author" />
+                              <TableColumn fx:id="qt" prefWidth="43.199951171875" text="QT" />
+                              <TableColumn fx:id="out" prefWidth="39.20001220703125" text="Out" />
+                              <TableColumn fx:id="edi" prefWidth="64.800048828125" text="Edit" />
+                          </columns>
+                        </TableView>
+                        <Button layoutX="21.0" layoutY="77.0" mnemonicParsing="false" onAction="#addbook" prefHeight="30.0" prefWidth="59.0" style="-fx-background-color: #528C5B;" text="add" textFill="#f4f0f0" />
+                        <Button layoutX="115.0" layoutY="77.0" mnemonicParsing="false" onAction="#refbook" prefHeight="30.0" prefWidth="58.0" text="refresh" textFill="#181818" />
+                        <TextField fx:id="searchable" layoutX="219.0" layoutY="80.0" prefHeight="26.0" prefWidth="299.0" style="-fx-border-color: #528C5B;" />
+                        <Button layoutX="521.0" layoutY="79.0" mnemonicParsing="false" onAction="#seabook" prefHeight="30.0" prefWidth="58.0" text="Search" textFill="#181818" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

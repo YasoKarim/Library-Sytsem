@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="stagepane" prefHeight="691.0" prefWidth="842.0" style="-fx-background-color: #f4ede4;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="liblib.libmain_control">
+   <children>
+      <TextField fx:id="renum" layoutX="23.0" layoutY="27.0" prefHeight="26.0" prefWidth="218.0" promptText="Phone Number" style="-fx-border-color: #528C5B;" />
+      <ImageView fx:id="vco" fitHeight="146.0" fitWidth="116.0" layoutX="37.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="addbas" layoutX="277.0" layoutY="194.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="90.0" style="-fx-background-color: #528C5B;" text="add to basket" textFill="#fffefe" />
+      <TextField fx:id="is" editable="false" layoutX="180.0" layoutY="61.0" prefHeight="26.0" prefWidth="267.0" style="-fx-border-color: #528C5B;" />
+      <TextField fx:id="na" editable="false" layoutX="180.0" layoutY="95.0" prefHeight="26.0" prefWidth="267.0" style="-fx-border-color: #528C5B;" />
+      <TextField fx:id="ca" editable="false" layoutX="180.0" layoutY="128.0" prefHeight="26.0" prefWidth="267.0" style="-fx-border-color: #528C5B;" />
+      <TextField fx:id="au" editable="false" layoutX="180.0" layoutY="161.0" prefHeight="26.0" prefWidth="267.0" style="-fx-border-color: #528C5B;" />
+      <Button layoutX="251.0" layoutY="27.0" mnemonicParsing="false" onAction="#regred" prefHeight="26.0" prefWidth="70.0" style="-fx-background-color: #528C5B;" text="confirm" textFill="#f7f4f4" />
+      <TableView fx:id="bees" layoutX="14.0" layoutY="267.0" prefHeight="414.0" prefWidth="478.0">
+        <columns>
+          <TableColumn fx:id="bis" prefWidth="125.60000896453857" text="ISBN" />
+          <TableColumn fx:id="bnam" prefWidth="191.19996643066406" text="Name" />
+            <TableColumn fx:id="bbv" text="View" />
+            <TableColumn fx:id="bba" prefWidth="80.00003662109373" text="Add" />
+        </columns>
+      </TableView>
+      <TableView fx:id="returntable" layoutX="497.0" layoutY="296.0" prefHeight="385.0" prefWidth="310.0">
+        <columns>
+          <TableColumn fx:id="returnname" prefWidth="132.0" text="Name" />
+          <TableColumn fx:id="author" prefWidth="109.5999755859375" text="Author" />
+            <TableColumn fx:id="returnButton" prefWidth="68.800048828125" text="return" />
+        </columns>
+      </TableView>
+      <TextField fx:id="sebox" layoutX="14.0" layoutY="234.0" prefHeight="26.0" prefWidth="257.0" style="-fx-border-color: #528C5B;" />
+      <Button fx:id="sercher" layoutX="277.0" layoutY="234.0" mnemonicParsing="false" onAction="#seda" prefHeight="26.0" prefWidth="89.0" text="search" textFill="#181717" />
+      <TableView fx:id="basket_tabl" layoutX="497.0" layoutY="25.0" prefHeight="173.0" prefWidth="310.0">
+        <columns>
+          <TableColumn fx:id="bas_name" prefWidth="154.4000244140625" text="Name" />
+          <TableColumn fx:id="bas_auth" minWidth="8.79998779296875" prefWidth="95.99993896484375" text="Author" />
+            <TableColumn fx:id="bas_rem" prefWidth="58.40006103515623" text="remove" />
+        </columns>
+      </TableView>
+      <Button layoutX="718.0" layoutY="206.0" mnemonicParsing="false" onAction="#check_out" prefHeight="26.0" prefWidth="89.0" style="-fx-background-color: #528C5B;" text="check out" textFill="#fffefe" />
+      <Button fx:id="activate_qr" layoutX="497.0" layoutY="206.0" mnemonicParsing="false" onAction="#act_qr" prefHeight="26.0" prefWidth="89.0" text="Activate QR" textFill="#181717" />
+      <Button fx:id="deactiv_qr" layoutX="590.0" layoutY="206.0" mnemonicParsing="false" onAction="#kill_cam" prefHeight="26.0" prefWidth="125.0" text="Deactivate QR" textFill="#131212" />
+      <Button layoutX="498.0" layoutY="235.0" mnemonicParsing="false" onAction="#logout" prefHeight="26.0" prefWidth="310.0" style="-fx-background-color: #e11f18;" text="Log out" textFill="#f7eeee" />
+      <Button layoutX="498.0" layoutY="267.0" mnemonicParsing="false" onAction="#retAll" prefHeight="26.0" prefWidth="310.0" text="Return all" textFill="#181717" />
+   </children>
+</AnchorPane>

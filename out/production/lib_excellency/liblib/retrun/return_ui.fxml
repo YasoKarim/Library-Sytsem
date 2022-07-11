@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane fx:id="stagepane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f4ede4;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="liblib.retrun.return_control">
+   <children>
+      <TableView fx:id="returned" prefHeight="280.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="isbn" prefWidth="124.79998779296875" text="ISBN" />
+          <TableColumn fx:id="name" prefWidth="149.60003662109375" text="Name" />
+            <TableColumn fx:id="author" prefWidth="127.20001220703125" text="Author" />
+            <TableColumn fx:id="dlate" prefWidth="104.0" text="days late" />
+            <TableColumn fx:id="latfine" prefWidth="98.4000244140625" text="lateness fine" />
+        </columns>
+      </TableView>
+      <Label layoutX="39.0" layoutY="292.0" prefHeight="18.0" prefWidth="90.0" text="SubTotal" />
+      <Label fx:id="stot" layoutX="115.0" layoutY="293.0" text="0.00" />
+      <Label layoutX="39.0" layoutY="333.0" text="Total" />
+      <Label fx:id="tot" layoutX="115.0" layoutY="333.0" text="0.00" />
+      <Label layoutX="39.0" layoutY="311.0" text="TAX 14%" />
+      <Label fx:id="tax" layoutX="115.0" layoutY="311.0" text="0.00" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="1.0" layoutX="37.0" layoutY="330.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <Button layoutX="461.0" layoutY="361.0" mnemonicParsing="false" onAction="#output" prefHeight="36.0" prefWidth="58.0" style="-fx-background-color: #528C5B;" text="Save" textFill="#f7f2f2" />
+      <Button layoutX="527.0" layoutY="361.0" mnemonicParsing="false" onAction="#canceller" prefHeight="36.0" prefWidth="58.0" style="-fx-background-color: #e11f18;" text="cancel" textFill="#f7f2f2" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="st" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f4ede4;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.editBcontrol">
+   <children>
+      <TextField fx:id="isbn" editable="false" layoutX="376.0" layoutY="37.0" style="-fx-border-color: #989E8B;" />
+      <TextField fx:id="nam" editable="false" layoutX="375.0" layoutY="90.0" style="-fx-border-color: #989E8B;" />
+      <TextField fx:id="auth" editable="false" layoutX="376.0" layoutY="209.0" style="-fx-border-color: #989E8B;" />
+      <TextField fx:id="quant" layoutX="376.0" layoutY="268.0" style="-fx-border-color: #989E8B;" />
+      <Label layoutX="307.0" layoutY="41.0" prefHeight="18.0" prefWidth="37.0" text="ISBN" />
+      <Label layoutX="309.0" layoutY="94.0" prefHeight="18.0" prefWidth="38.0" text="name" />
+      <Label layoutX="305.0" layoutY="150.0" prefHeight="18.0" prefWidth="61.0" text="Category" />
+      <Label layoutX="308.0" layoutY="213.0" prefHeight="18.0" prefWidth="45.0" text="Author" />
+      <Label layoutX="305.0" layoutY="272.0" text="Quantity" />
+      <ImageView fx:id="im" fitHeight="251.0" fitWidth="200.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="88.0" layoutY="294.0" mnemonicParsing="false" onAction="#chan" text="Change" textFill="#1e1d1d" />
+      <TextField fx:id="Cat" editable="false" layoutX="377.0" layoutY="147.0" style="-fx-border-color: #989E8B;" />
+      <Button layoutX="194.0" layoutY="348.0" mnemonicParsing="false" onAction="#save" prefHeight="36.0" prefWidth="50.0" style="-fx-background-color: #528C5B;" text="save" textFill="#f7f2f2" />
+      <Button layoutX="326.0" layoutY="348.0" mnemonicParsing="false" onAction="#cancel" prefHeight="36.0" prefWidth="50.0" style="-fx-background-color: #e11f18;" text="cancel" textFill="#f7f2f2" />
+      <Button layoutX="255.0" layoutY="348.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="50.0" text="delete" textFill="#1e1d1d" />
+   </children>
+</AnchorPane>
