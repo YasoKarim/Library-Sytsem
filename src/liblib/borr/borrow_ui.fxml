@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="exit" prefHeight="399.0" prefWidth="494.0" style="-fx-background-color: #f4ede4;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="liblib.borr.borrow_control">
+   <children>
+      <TableView fx:id="list" prefHeight="318.0" prefWidth="494.0">
+        <columns>
+          <TableColumn fx:id="is" prefWidth="121.59997254610062" text="ISBN" />
+          <TableColumn fx:id="nam" prefWidth="145.59999084472656" text="name" />
+            <TableColumn fx:id="aut" prefWidth="114.4000244140625" text="author" />
+            <TableColumn fx:id="lodatp" prefWidth="115.20001220703125" text="return data" />
+        </columns>
+      </TableView>
+      <DatePicker fx:id="gen_dat" layoutX="171.0" layoutY="324.0" prefHeight="26.0" prefWidth="134.0" promptText="general date" style="-fx-border-color: #989E8B;" />
+      <Button layoutX="151.0" layoutY="355.0" mnemonicParsing="false" onAction="#execute_transaction" prefHeight="36.0" prefWidth="88.0" style="-fx-background-color: #528C5B;" text="proceed" textFill="#fcf7f7" />
+      <Button layoutX="242.0" layoutY="355.0" mnemonicParsing="false" onAction="#canceller" prefHeight="36.0" prefWidth="88.0" style="-fx-background-color: #e11f18;" text="Cancel" textFill="#f7f2f2" />
+   </children>
+</AnchorPane>

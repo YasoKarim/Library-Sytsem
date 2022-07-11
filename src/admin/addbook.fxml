@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="379.0" prefWidth="344.0" style="-fx-background-color: #f4ede4;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.addbookcontrol">
+   <children>
+      <TextField fx:id="isbnprom" layoutX="16.0" layoutY="49.0" prefHeight="26.0" prefWidth="311.0" promptText="ISBN" style="-fx-border-color: #989E8B;" />
+      <TextField fx:id="nameprom" layoutX="16.0" layoutY="101.0" prefHeight="26.0" prefWidth="311.0" promptText="Book Name" style="-fx-border-color: #989E8B;" />
+      <TextField fx:id="authprom" layoutX="18.0" layoutY="205.0" prefHeight="26.0" prefWidth="311.0" promptText="Author Name" style="-fx-border-color: #989E8B;" />
+      <TextField fx:id="qtprom" layoutX="18.0" layoutY="257.0" prefHeight="26.0" prefWidth="311.0" promptText="Quantity" style="-fx-border-color: #989E8B;" />
+      <Button layoutX="124.0" layoutY="307.0" mnemonicParsing="false" onAction="#doadd" prefHeight="26.0" prefWidth="96.0" style="-fx-background-color: #528C5B;" text="Add" textFill="#f7efef" />
+      <Label layoutX="16.0" layoutY="333.0" prefHeight="18.0" prefWidth="311.0" />
+      <ChoiceBox fx:id="catprom" layoutX="16.0" layoutY="151.0" prefHeight="26.0" prefWidth="311.0" />
+   </children>
+</AnchorPane>
