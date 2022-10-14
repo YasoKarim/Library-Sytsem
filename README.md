@@ -12,9 +12,8 @@
 * A recording of the running project is uploaded as "Recording #1.mp4" but it is not the final version and it still has some errors  
 * all the errors were fixed and all functionalities were added but not updated in the video   
   
-## We made it and we get a very big bonus for it, we are actually the only ones who got an A+ in advanced programming for that year in our college :D!   
-Feel free to browse through the code, it has QR feature to search for books found in the database.  
-Enjoy the surprise waiting for you on running the code ;).  
+## Feel free to browse through the code, it has QR feature to search for books found in the database.  
+   Enjoy the surprise waiting for you on running the code ;).  
   
 libraries used:  
   java-mail.jar  
