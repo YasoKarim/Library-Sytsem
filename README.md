@@ -1,8 +1,8 @@
-## Developers:  
-# Mohamed Dwidar: https://github.com/PROG-MohamedDwidar  
-# Yasmine Elshafie: https://github.com/YasoKarim  
-# Mariem Elkhateeb: https://github.com/mariamalkhateeb  
-# Menna Amr: https://github.com/Mennamr  
+# Developers:  
+### Mohamed Dwidar: https://github.com/PROG-MohamedDwidar  
+### Yasmine El Shafei: https://github.com/YasoKarim  
+### Mariem Elkhateeb: https://github.com/mariamalkhateeb  
+### Menna Amr: https://github.com/Mennamr  
   
 ## Attention:  
  * contribution on github doesn't reflect how developers distributed tasks among themselves  
